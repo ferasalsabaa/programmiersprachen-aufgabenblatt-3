@@ -1,5 +1,4 @@
 #define CATCH_CONFIG_RUNNER
-
 #include "vec2.hpp"
 #include "mat2.hpp"
 #include "color.hpp"
@@ -309,4 +308,5 @@ TEST_CASE("describe_rectangle_circumference", "[rectangle]")
 int main(int argc, char *argv[])
 {
   return Catch::Session().run(argc, argv);
+  
 }

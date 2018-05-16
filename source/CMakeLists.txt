@@ -27,7 +27,11 @@ add_executable(tests
   circle.cpp
   rectangle.cpp
   window.cpp
+  
   )
+  #build aufgabe_2_und_3
+  add_executable(aufgabe_2_und_3
+  aufgabe_2_und_3.cpp)
 target_link_libraries(tests
   glfw
   ${GLFW_LIBRARIES}

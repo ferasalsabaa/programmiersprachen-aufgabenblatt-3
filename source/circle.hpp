@@ -8,6 +8,7 @@ class Circle
   private:
   const float radius_;
   const Vec2 center_;
+  const string name;
   
   
 
