@@ -111,34 +111,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-source/CMakeFiles/example.dir/rule:
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/example.dir/rule
-.PHONY : source/CMakeFiles/example.dir/rule
+source/CMakeFiles/aufgabe_4.dir/rule:
+	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe_4.dir/rule
+.PHONY : source/CMakeFiles/aufgabe_4.dir/rule
 
 # Convenience name for target.
-example: source/CMakeFiles/example.dir/rule
+aufgabe_4: source/CMakeFiles/aufgabe_4.dir/rule
 
-.PHONY : example
+.PHONY : aufgabe_4
 
 # fast build rule for target.
-example/fast:
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/build
-.PHONY : example/fast
-
-# Convenience name for target.
-source/CMakeFiles/tests.dir/rule:
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/tests.dir/rule
-.PHONY : source/CMakeFiles/tests.dir/rule
-
-# Convenience name for target.
-tests: source/CMakeFiles/tests.dir/rule
-
-.PHONY : tests
-
-# fast build rule for target.
-tests/fast:
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/build
-.PHONY : tests/fast
+aufgabe_4/fast:
+	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe_4.dir/build.make source/CMakeFiles/aufgabe_4.dir/build
+.PHONY : aufgabe_4/fast
 
 # Convenience name for target.
 source/CMakeFiles/aufgabe_2_und_3.dir/rule:
@@ -182,14 +167,40 @@ aufgabe_2_und_3.cpp.s:
 	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe_2_und_3.dir/build.make source/CMakeFiles/aufgabe_2_und_3.dir/aufgabe_2_und_3.cpp.s
 .PHONY : aufgabe_2_und_3.cpp.s
 
+aufgabe_4.o: aufgabe_4.cpp.o
+
+.PHONY : aufgabe_4.o
+
+# target to build an object file
+aufgabe_4.cpp.o:
+	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe_4.dir/build.make source/CMakeFiles/aufgabe_4.dir/aufgabe_4.cpp.o
+.PHONY : aufgabe_4.cpp.o
+
+aufgabe_4.i: aufgabe_4.cpp.i
+
+.PHONY : aufgabe_4.i
+
+# target to preprocess a source file
+aufgabe_4.cpp.i:
+	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe_4.dir/build.make source/CMakeFiles/aufgabe_4.dir/aufgabe_4.cpp.i
+.PHONY : aufgabe_4.cpp.i
+
+aufgabe_4.s: aufgabe_4.cpp.s
+
+.PHONY : aufgabe_4.s
+
+# target to generate assembly for a file
+aufgabe_4.cpp.s:
+	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe_4.dir/build.make source/CMakeFiles/aufgabe_4.dir/aufgabe_4.cpp.s
+.PHONY : aufgabe_4.cpp.s
+
 circle.o: circle.cpp.o
 
 .PHONY : circle.o
 
 # target to build an object file
 circle.cpp.o:
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/circle.cpp.o
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/circle.cpp.o
+	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe_4.dir/build.make source/CMakeFiles/aufgabe_4.dir/circle.cpp.o
 .PHONY : circle.cpp.o
 
 circle.i: circle.cpp.i
@@ -198,8 +209,7 @@ circle.i: circle.cpp.i
 
 # target to preprocess a source file
 circle.cpp.i:
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/circle.cpp.i
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/circle.cpp.i
+	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe_4.dir/build.make source/CMakeFiles/aufgabe_4.dir/circle.cpp.i
 .PHONY : circle.cpp.i
 
 circle.s: circle.cpp.s
@@ -208,153 +218,8 @@ circle.s: circle.cpp.s
 
 # target to generate assembly for a file
 circle.cpp.s:
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/circle.cpp.s
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/circle.cpp.s
+	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe_4.dir/build.make source/CMakeFiles/aufgabe_4.dir/circle.cpp.s
 .PHONY : circle.cpp.s
-
-example.o: example.cpp.o
-
-.PHONY : example.o
-
-# target to build an object file
-example.cpp.o:
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/example.cpp.o
-.PHONY : example.cpp.o
-
-example.i: example.cpp.i
-
-.PHONY : example.i
-
-# target to preprocess a source file
-example.cpp.i:
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/example.cpp.i
-.PHONY : example.cpp.i
-
-example.s: example.cpp.s
-
-.PHONY : example.s
-
-# target to generate assembly for a file
-example.cpp.s:
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/example.cpp.s
-.PHONY : example.cpp.s
-
-glew.o: glew.c.o
-
-.PHONY : glew.o
-
-# target to build an object file
-glew.c.o:
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/glew.c.o
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/glew.c.o
-.PHONY : glew.c.o
-
-glew.i: glew.c.i
-
-.PHONY : glew.i
-
-# target to preprocess a source file
-glew.c.i:
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/glew.c.i
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/glew.c.i
-.PHONY : glew.c.i
-
-glew.s: glew.c.s
-
-.PHONY : glew.s
-
-# target to generate assembly for a file
-glew.c.s:
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/glew.c.s
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/glew.c.s
-.PHONY : glew.c.s
-
-mat2.o: mat2.cpp.o
-
-.PHONY : mat2.o
-
-# target to build an object file
-mat2.cpp.o:
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/mat2.cpp.o
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/mat2.cpp.o
-.PHONY : mat2.cpp.o
-
-mat2.i: mat2.cpp.i
-
-.PHONY : mat2.i
-
-# target to preprocess a source file
-mat2.cpp.i:
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/mat2.cpp.i
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/mat2.cpp.i
-.PHONY : mat2.cpp.i
-
-mat2.s: mat2.cpp.s
-
-.PHONY : mat2.s
-
-# target to generate assembly for a file
-mat2.cpp.s:
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/mat2.cpp.s
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/mat2.cpp.s
-.PHONY : mat2.cpp.s
-
-rectangle.o: rectangle.cpp.o
-
-.PHONY : rectangle.o
-
-# target to build an object file
-rectangle.cpp.o:
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/rectangle.cpp.o
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/rectangle.cpp.o
-.PHONY : rectangle.cpp.o
-
-rectangle.i: rectangle.cpp.i
-
-.PHONY : rectangle.i
-
-# target to preprocess a source file
-rectangle.cpp.i:
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/rectangle.cpp.i
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/rectangle.cpp.i
-.PHONY : rectangle.cpp.i
-
-rectangle.s: rectangle.cpp.s
-
-.PHONY : rectangle.s
-
-# target to generate assembly for a file
-rectangle.cpp.s:
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/rectangle.cpp.s
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/rectangle.cpp.s
-.PHONY : rectangle.cpp.s
-
-tests.o: tests.cpp.o
-
-.PHONY : tests.o
-
-# target to build an object file
-tests.cpp.o:
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/tests.cpp.o
-.PHONY : tests.cpp.o
-
-tests.i: tests.cpp.i
-
-.PHONY : tests.i
-
-# target to preprocess a source file
-tests.cpp.i:
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/tests.cpp.i
-.PHONY : tests.cpp.i
-
-tests.s: tests.cpp.s
-
-.PHONY : tests.s
-
-# target to generate assembly for a file
-tests.cpp.s:
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/tests.cpp.s
-.PHONY : tests.cpp.s
 
 vec2.o: vec2.cpp.o
 
@@ -362,8 +227,7 @@ vec2.o: vec2.cpp.o
 
 # target to build an object file
 vec2.cpp.o:
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/vec2.cpp.o
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/vec2.cpp.o
+	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe_4.dir/build.make source/CMakeFiles/aufgabe_4.dir/vec2.cpp.o
 .PHONY : vec2.cpp.o
 
 vec2.i: vec2.cpp.i
@@ -372,8 +236,7 @@ vec2.i: vec2.cpp.i
 
 # target to preprocess a source file
 vec2.cpp.i:
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/vec2.cpp.i
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/vec2.cpp.i
+	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe_4.dir/build.make source/CMakeFiles/aufgabe_4.dir/vec2.cpp.i
 .PHONY : vec2.cpp.i
 
 vec2.s: vec2.cpp.s
@@ -382,39 +245,8 @@ vec2.s: vec2.cpp.s
 
 # target to generate assembly for a file
 vec2.cpp.s:
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/vec2.cpp.s
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/vec2.cpp.s
+	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe_4.dir/build.make source/CMakeFiles/aufgabe_4.dir/vec2.cpp.s
 .PHONY : vec2.cpp.s
-
-window.o: window.cpp.o
-
-.PHONY : window.o
-
-# target to build an object file
-window.cpp.o:
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/window.cpp.o
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/window.cpp.o
-.PHONY : window.cpp.o
-
-window.i: window.cpp.i
-
-.PHONY : window.i
-
-# target to preprocess a source file
-window.cpp.i:
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/window.cpp.i
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/window.cpp.i
-.PHONY : window.cpp.i
-
-window.s: window.cpp.s
-
-.PHONY : window.s
-
-# target to generate assembly for a file
-window.cpp.s:
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/example.dir/build.make source/CMakeFiles/example.dir/window.cpp.s
-	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/tests.dir/build.make source/CMakeFiles/tests.dir/window.cpp.s
-.PHONY : window.cpp.s
 
 # Help Target
 help:
@@ -423,37 +255,21 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... example"
 	@echo "... edit_cache"
-	@echo "... tests"
+	@echo "... aufgabe_4"
 	@echo "... aufgabe_2_und_3"
 	@echo "... aufgabe_2_und_3.o"
 	@echo "... aufgabe_2_und_3.i"
 	@echo "... aufgabe_2_und_3.s"
+	@echo "... aufgabe_4.o"
+	@echo "... aufgabe_4.i"
+	@echo "... aufgabe_4.s"
 	@echo "... circle.o"
 	@echo "... circle.i"
 	@echo "... circle.s"
-	@echo "... example.o"
-	@echo "... example.i"
-	@echo "... example.s"
-	@echo "... glew.o"
-	@echo "... glew.i"
-	@echo "... glew.s"
-	@echo "... mat2.o"
-	@echo "... mat2.i"
-	@echo "... mat2.s"
-	@echo "... rectangle.o"
-	@echo "... rectangle.i"
-	@echo "... rectangle.s"
-	@echo "... tests.o"
-	@echo "... tests.i"
-	@echo "... tests.s"
 	@echo "... vec2.o"
 	@echo "... vec2.i"
 	@echo "... vec2.s"
-	@echo "... window.o"
-	@echo "... window.i"
-	@echo "... window.s"
 .PHONY : help
 
 
