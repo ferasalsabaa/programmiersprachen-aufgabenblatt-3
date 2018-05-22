@@ -126,6 +126,21 @@ aufgabe_4/fast:
 .PHONY : aufgabe_4/fast
 
 # Convenience name for target.
+source/CMakeFiles/aufgabe_5.dir/rule:
+	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe_5.dir/rule
+.PHONY : source/CMakeFiles/aufgabe_5.dir/rule
+
+# Convenience name for target.
+aufgabe_5: source/CMakeFiles/aufgabe_5.dir/rule
+
+.PHONY : aufgabe_5
+
+# fast build rule for target.
+aufgabe_5/fast:
+	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe_5.dir/build.make source/CMakeFiles/aufgabe_5.dir/build
+.PHONY : aufgabe_5/fast
+
+# Convenience name for target.
 source/CMakeFiles/aufgabe_2_und_3.dir/rule:
 	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe_2_und_3.dir/rule
 .PHONY : source/CMakeFiles/aufgabe_2_und_3.dir/rule
@@ -194,6 +209,33 @@ aufgabe_4.cpp.s:
 	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe_4.dir/build.make source/CMakeFiles/aufgabe_4.dir/aufgabe_4.cpp.s
 .PHONY : aufgabe_4.cpp.s
 
+aufgabe_5.o: aufgabe_5.cpp.o
+
+.PHONY : aufgabe_5.o
+
+# target to build an object file
+aufgabe_5.cpp.o:
+	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe_5.dir/build.make source/CMakeFiles/aufgabe_5.dir/aufgabe_5.cpp.o
+.PHONY : aufgabe_5.cpp.o
+
+aufgabe_5.i: aufgabe_5.cpp.i
+
+.PHONY : aufgabe_5.i
+
+# target to preprocess a source file
+aufgabe_5.cpp.i:
+	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe_5.dir/build.make source/CMakeFiles/aufgabe_5.dir/aufgabe_5.cpp.i
+.PHONY : aufgabe_5.cpp.i
+
+aufgabe_5.s: aufgabe_5.cpp.s
+
+.PHONY : aufgabe_5.s
+
+# target to generate assembly for a file
+aufgabe_5.cpp.s:
+	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe_5.dir/build.make source/CMakeFiles/aufgabe_5.dir/aufgabe_5.cpp.s
+.PHONY : aufgabe_5.cpp.s
+
 circle.o: circle.cpp.o
 
 .PHONY : circle.o
@@ -255,15 +297,19 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... edit_cache"
 	@echo "... aufgabe_4"
+	@echo "... aufgabe_5"
 	@echo "... aufgabe_2_und_3"
+	@echo "... edit_cache"
 	@echo "... aufgabe_2_und_3.o"
 	@echo "... aufgabe_2_und_3.i"
 	@echo "... aufgabe_2_und_3.s"
 	@echo "... aufgabe_4.o"
 	@echo "... aufgabe_4.i"
 	@echo "... aufgabe_4.s"
+	@echo "... aufgabe_5.o"
+	@echo "... aufgabe_5.i"
+	@echo "... aufgabe_5.s"
 	@echo "... circle.o"
 	@echo "... circle.i"
 	@echo "... circle.s"

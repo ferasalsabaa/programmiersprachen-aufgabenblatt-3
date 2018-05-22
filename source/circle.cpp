@@ -5,19 +5,19 @@
 #include <cmath>
 #include <iostream>
 
-Circle::Circle() : radius_{0.0f} , center_{0.0f,0.0f} , color_circle_{0.0f,0.0f,0.0f}
+Circle::Circle() : radius_{0.0f} , center_{0.0f,0.0f} , name_{"circle"} , color_circle_{0.0f,0.0f,0.0f} 
 {}
-Circle::Circle(float radius , Vec2 center , Color color_circle) : radius_{radius}, center_{center}, color_circle_{color_circle}
+Circle::Circle(float radius , Vec2 const& center , Color const& color_circle) : radius_{radius}, center_{center}, name_{"  "}, color_circle_{color_circle}
 {}
-Circle::Circle(float radius , Vec2 center , string name,Color color_circle) : radius_{radius}, center_{center}, name_{name} ,color_circle_{color_circle} 
+Circle::Circle(float radius , Vec2 const& center , string const& name,Color const& color_circle) : radius_{radius}, center_{center}, name_{name} ,color_circle_{color_circle} 
 {}
-Circle::Circle(string name) : radius_{0.0f} , center_{0.0f,0.0f}, name_{name}, color_circle_{0.0f,0.0f,0.0f}
+Circle::Circle(string const& name) : radius_{0.0f} , center_{0.0f,0.0f}, name_{name}, color_circle_{0.0f,0.0f,0.0f}
 {}
 Vec2 Circle::get_center()
 {
     return center_ ;
 }
- float Circle::get_radius()
+ float Circle::get_radius() const
  {
      return radius_ ;
  }

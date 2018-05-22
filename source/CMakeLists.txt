@@ -10,6 +10,10 @@
   color.hpp
   vec2.cpp)
 
+  #build aufgabe_5
+  add_executable(aufgabe_5
+  aufgabe_5.cpp)
+
 
 
 

@@ -10,15 +10,17 @@ class Circle
   const std::string name_;
   
   
+  
 
   public:
   Color color_circle_;
+  
   Circle();
-  Circle(float radius, Vec2 center, Color color_circle_); 
-  Circle(float radius, Vec2 center, string name_ , Color color_circle_);
-  Circle(string name_);  
+  Circle(float radius, Vec2 const& center, Color const& color_circle_); 
+  Circle(float radius, Vec2 const& center, string const& name_ , Color const& color_circle_);
+  Circle(string const& name_);  
   Vec2 get_center();
-  float get_radius ();
+  float get_radius () const;
   float circumference() const;
   std::string get_name() const;
   Color get_color_circle();
