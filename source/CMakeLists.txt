@@ -14,6 +14,10 @@
   add_executable(aufgabe_5
   aufgabe_5.cpp)
 
+#build aufgabe_6
+add_executable(aufgabe_6
+aufgabe_6.cpp)
+
 
 
 

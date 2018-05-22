@@ -137,6 +137,19 @@ glfw/fast:
 .PHONY : glfw/fast
 
 #=============================================================================
+# Target rules for targets named aufgabe_2_und_3
+
+# Build rule for target.
+aufgabe_2_und_3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 aufgabe_2_und_3
+.PHONY : aufgabe_2_und_3
+
+# fast build rule for target.
+aufgabe_2_und_3/fast:
+	$(MAKE) -f source/CMakeFiles/aufgabe_2_und_3.dir/build.make source/CMakeFiles/aufgabe_2_und_3.dir/build
+.PHONY : aufgabe_2_und_3/fast
+
+#=============================================================================
 # Target rules for targets named aufgabe_4
 
 # Build rule for target.
@@ -163,17 +176,17 @@ aufgabe_5/fast:
 .PHONY : aufgabe_5/fast
 
 #=============================================================================
-# Target rules for targets named aufgabe_2_und_3
+# Target rules for targets named aufgabe_6
 
 # Build rule for target.
-aufgabe_2_und_3: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 aufgabe_2_und_3
-.PHONY : aufgabe_2_und_3
+aufgabe_6: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 aufgabe_6
+.PHONY : aufgabe_6
 
 # fast build rule for target.
-aufgabe_2_und_3/fast:
-	$(MAKE) -f source/CMakeFiles/aufgabe_2_und_3.dir/build.make source/CMakeFiles/aufgabe_2_und_3.dir/build
-.PHONY : aufgabe_2_und_3/fast
+aufgabe_6/fast:
+	$(MAKE) -f source/CMakeFiles/aufgabe_6.dir/build.make source/CMakeFiles/aufgabe_6.dir/build
+.PHONY : aufgabe_6/fast
 
 external/nanovg/src/nanovg.o: external/nanovg/src/nanovg.c.o
 
@@ -212,9 +225,10 @@ help:
 	@echo "... edit_cache"
 	@echo "... nanovg"
 	@echo "... glfw"
+	@echo "... aufgabe_2_und_3"
 	@echo "... aufgabe_4"
 	@echo "... aufgabe_5"
-	@echo "... aufgabe_2_und_3"
+	@echo "... aufgabe_6"
 	@echo "... external/nanovg/src/nanovg.o"
 	@echo "... external/nanovg/src/nanovg.i"
 	@echo "... external/nanovg/src/nanovg.s"
