@@ -1,3 +1,6 @@
+#include"circle.hpp"
+#include "vec2.hpp"
+#include "color.hpp"
 #include<iostream>
 #include<map>
 

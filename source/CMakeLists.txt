@@ -16,7 +16,10 @@
 
 #build aufgabe_6
 add_executable(aufgabe_6
-aufgabe_6.cpp)
+aufgabe_6.cpp
+circle.cpp
+color.hpp
+vec2.cpp)
 
 
 
