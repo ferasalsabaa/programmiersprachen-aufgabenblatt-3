@@ -39,19 +39,22 @@ bool equal_name(string name,set<Circle> set_circle)
 int main()
 {
     Circle c1;
-    Vec2 v1();
-    Color color1(1,0,0);
-    //float r = 0.0f;
-   //Circle c5( r, v1, " " , color1);
-   // Circle c2(r,v1,"gg",color1);
-    Circle c3{"ff"};
-    Circle c4{"hh"};
+    Vec2 v1{1,1};
+    Vec2 v11{19,19};
+    Color color1{1,0,0};
+    Color color11{1,1,0};
+    float r = 0.0f;
+    float r1 = 0.1f;
+   Circle c5{r, v1, "hhk" , color1};
+    Circle c2{r1,v11,"hhk",color11};
+  //  Circle c3{"ff"};
+    //Circle c4{"hh"};
     std::cout<<c1;
    // std::cout<<c2;
 
 set<Circle> set_circle;
 
-vector<Circle> v2 {c4,c3,c1};
+vector<Circle> v2 {c2,c5};
 for(auto& i :v2)
 {
    auto s=set_circle.find(i);

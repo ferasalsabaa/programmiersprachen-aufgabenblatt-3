@@ -5,9 +5,9 @@
 class Circle
 {
   private:
-  const float radius_;
-  const Vec2 center_;
-  const std::string name_;
+  float radius_;
+  Vec2 center_;
+  string name_;
   
   
   
