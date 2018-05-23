@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+source/CMakeFiles/aufgabe_11.dir/rule:
+	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe_11.dir/rule
+.PHONY : source/CMakeFiles/aufgabe_11.dir/rule
+
+# Convenience name for target.
+aufgabe_11: source/CMakeFiles/aufgabe_11.dir/rule
+
+.PHONY : aufgabe_11
+
+# fast build rule for target.
+aufgabe_11/fast:
+	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe_11.dir/build.make source/CMakeFiles/aufgabe_11.dir/build
+.PHONY : aufgabe_11/fast
+
+# Convenience name for target.
 source/CMakeFiles/aufgabe_9.dir/rule:
 	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe_9.dir/rule
 .PHONY : source/CMakeFiles/aufgabe_9.dir/rule
@@ -214,6 +229,33 @@ aufgabe_6: source/CMakeFiles/aufgabe_6.dir/rule
 aufgabe_6/fast:
 	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe_6.dir/build.make source/CMakeFiles/aufgabe_6.dir/build
 .PHONY : aufgabe_6/fast
+
+aufgabe_11.o: aufgabe_11.cpp.o
+
+.PHONY : aufgabe_11.o
+
+# target to build an object file
+aufgabe_11.cpp.o:
+	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe_11.dir/build.make source/CMakeFiles/aufgabe_11.dir/aufgabe_11.cpp.o
+.PHONY : aufgabe_11.cpp.o
+
+aufgabe_11.i: aufgabe_11.cpp.i
+
+.PHONY : aufgabe_11.i
+
+# target to preprocess a source file
+aufgabe_11.cpp.i:
+	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe_11.dir/build.make source/CMakeFiles/aufgabe_11.dir/aufgabe_11.cpp.i
+.PHONY : aufgabe_11.cpp.i
+
+aufgabe_11.s: aufgabe_11.cpp.s
+
+.PHONY : aufgabe_11.s
+
+# target to generate assembly for a file
+aufgabe_11.cpp.s:
+	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe_11.dir/build.make source/CMakeFiles/aufgabe_11.dir/aufgabe_11.cpp.s
+.PHONY : aufgabe_11.cpp.s
 
 aufgabe_2_und_3.o: aufgabe_2_und_3.cpp.o
 
@@ -483,6 +525,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... aufgabe_11"
 	@echo "... aufgabe_9"
 	@echo "... aufgabe_8"
 	@echo "... edit_cache"
@@ -491,6 +534,9 @@ help:
 	@echo "... aufgabe_4"
 	@echo "... aufgabe_5"
 	@echo "... aufgabe_6"
+	@echo "... aufgabe_11.o"
+	@echo "... aufgabe_11.i"
+	@echo "... aufgabe_11.s"
 	@echo "... aufgabe_2_und_3.o"
 	@echo "... aufgabe_2_und_3.i"
 	@echo "... aufgabe_2_und_3.s"

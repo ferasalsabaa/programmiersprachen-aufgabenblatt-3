@@ -56,11 +56,16 @@ int main(){
     }
 
 //3.10
+    //vector<unsigned int> v_numbers(100);
 
-    std::vector<int> v_numbers(std::cbegin(set_numbers), std::cend(set_numbers));
-    std::copy(std::cbegin(v_numbers),std::cend(v_numbers) ,
-    std::ostream_iterator<int>(std::cout," , "));
+    std::vector<int> v_numbers(numbers.size());
+    std::copy(numbers.begin(),numbers.end() ,
+    v_numbers.begin());
 
+
+     std::copy(v_numbers.begin(), v_numbers.end(),
+              std::ostream_iterator<int>(std::cout, " "));
+    std::cout << '\n';
     return 0 ;
     }
     
