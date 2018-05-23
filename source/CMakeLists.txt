@@ -21,6 +21,20 @@ circle.cpp
 color.hpp
 vec2.cpp)
 
+#build aufgabe_7
+add_executable(aufgabe_7
+aufgabe_7.cpp
+circle.cpp
+color.hpp
+vec2.cpp)
+
+#build aufgabe_8
+add_executable(aufgabe_8
+aufgabe_8.cpp
+circle.cpp
+color.hpp
+vec2.cpp)
+
 
 
 

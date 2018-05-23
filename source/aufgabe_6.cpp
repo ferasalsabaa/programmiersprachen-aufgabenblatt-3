@@ -21,8 +21,8 @@ bool operator ==(Circle const& c1,Circle const& c2)
 }
 Vec2 v1 {2.2f,2.2f};
 Color color1 {0.0f};
-Circle circle1 {22,v1,color1};
-Circle circle2 {5,v1,color1};
+Circle circle1 {22,v1,"circle1",color1};
+Circle circle2 {5,v1,"circle2",color1};
 
 std::vector<Circle> sorted_circles {circle1,circle2};
 
