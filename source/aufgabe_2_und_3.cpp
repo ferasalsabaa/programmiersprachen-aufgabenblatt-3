@@ -1,6 +1,9 @@
 #include<list>
+#include<vector>
 #include<set>
 #include<map>
+#include <iterator>
+#include <algorithm>
 #include<iostream>
 using namespace std;
 
@@ -51,6 +54,13 @@ int main(){
     {
         cout<<i.first << " : " << i.second <<"\n";
     }
+
+//3.10
+
+    std::vector<int> v_numbers(std::cbegin(set_numbers), std::cend(set_numbers));
+    std::copy(std::cbegin(v_numbers),std::cend(v_numbers) ,
+    std::ostream_iterator<int>(std::cout," , "));
+
     return 0 ;
     }
     
