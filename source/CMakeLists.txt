@@ -47,5 +47,12 @@ aufgabe_11.cpp)
 add_executable(aufgabe_12
 aufgabe_12.cpp)
 
+#build aufgabe_14
+add_executable(aufgabe_14
+aufgabe_14.cpp
+circle.cpp
+color.hpp
+vec2.cpp)
+
 
 

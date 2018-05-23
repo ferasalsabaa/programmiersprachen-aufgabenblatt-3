@@ -13,6 +13,8 @@ Circle::Circle(float radius , Vec2 const& center , string const& name,Color cons
 {}
 Circle::Circle(string const& name) : radius_{0.0f} , center_{0.0f,0.0f}, name_{name}, color_circle_{0.0f,0.0f,0.0f}
 {}
+Circle::Circle(float radius) : radius_{radius} , center_{0.0f,0.0f} , name_{"  "},color_circle_{0.0f,0.0f,0.0f} 
+{}
 Vec2 Circle::get_center()
 {
     return center_ ;

@@ -19,6 +19,7 @@ class Circle
   Circle(float radius, Vec2 const& center, Color const& color_circle_); 
   Circle(float radius, Vec2 const& center, string const& name_ , Color const& color_circle_);
   Circle(string const& name_);  
+  Circle(float radius);
   Vec2 get_center();
   float get_radius () const;
   float circumference() const;
