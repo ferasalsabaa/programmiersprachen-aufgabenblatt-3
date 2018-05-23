@@ -28,7 +28,7 @@ int main()
     sort(sorted_circles.begin(), sorted_circles.end(), 
     [](const Circle & a, const Circle & b) -> bool
   { 
-    return (a < b? true:false); 
+    return (a < b); 
   }
        );
 
