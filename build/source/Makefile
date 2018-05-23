@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+source/CMakeFiles/aufgabe_9.dir/rule:
+	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe_9.dir/rule
+.PHONY : source/CMakeFiles/aufgabe_9.dir/rule
+
+# Convenience name for target.
+aufgabe_9: source/CMakeFiles/aufgabe_9.dir/rule
+
+.PHONY : aufgabe_9
+
+# fast build rule for target.
+aufgabe_9/fast:
+	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe_9.dir/build.make source/CMakeFiles/aufgabe_9.dir/build
+.PHONY : aufgabe_9/fast
+
+# Convenience name for target.
 source/CMakeFiles/aufgabe_8.dir/rule:
 	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe_8.dir/rule
 .PHONY : source/CMakeFiles/aufgabe_8.dir/rule
@@ -362,6 +377,33 @@ aufgabe_8.cpp.s:
 	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe_8.dir/build.make source/CMakeFiles/aufgabe_8.dir/aufgabe_8.cpp.s
 .PHONY : aufgabe_8.cpp.s
 
+aufgabe_9.o: aufgabe_9.cpp.o
+
+.PHONY : aufgabe_9.o
+
+# target to build an object file
+aufgabe_9.cpp.o:
+	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe_9.dir/build.make source/CMakeFiles/aufgabe_9.dir/aufgabe_9.cpp.o
+.PHONY : aufgabe_9.cpp.o
+
+aufgabe_9.i: aufgabe_9.cpp.i
+
+.PHONY : aufgabe_9.i
+
+# target to preprocess a source file
+aufgabe_9.cpp.i:
+	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe_9.dir/build.make source/CMakeFiles/aufgabe_9.dir/aufgabe_9.cpp.i
+.PHONY : aufgabe_9.cpp.i
+
+aufgabe_9.s: aufgabe_9.cpp.s
+
+.PHONY : aufgabe_9.s
+
+# target to generate assembly for a file
+aufgabe_9.cpp.s:
+	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe_9.dir/build.make source/CMakeFiles/aufgabe_9.dir/aufgabe_9.cpp.s
+.PHONY : aufgabe_9.cpp.s
+
 circle.o: circle.cpp.o
 
 .PHONY : circle.o
@@ -441,6 +483,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... aufgabe_9"
 	@echo "... aufgabe_8"
 	@echo "... edit_cache"
 	@echo "... aufgabe_2_und_3"
@@ -466,6 +509,9 @@ help:
 	@echo "... aufgabe_8.o"
 	@echo "... aufgabe_8.i"
 	@echo "... aufgabe_8.s"
+	@echo "... aufgabe_9.o"
+	@echo "... aufgabe_9.i"
+	@echo "... aufgabe_9.s"
 	@echo "... circle.o"
 	@echo "... circle.i"
 	@echo "... circle.s"

@@ -35,6 +35,10 @@ circle.cpp
 color.hpp
 vec2.cpp)
 
+#build aufgabe_9
+add_executable(aufgabe_9
+aufgabe_9.cpp)
+
 
 
 
