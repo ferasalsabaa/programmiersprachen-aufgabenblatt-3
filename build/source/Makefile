@@ -126,6 +126,21 @@ aufgabe_6/fast:
 .PHONY : aufgabe_6/fast
 
 # Convenience name for target.
+source/CMakeFiles/algo.dir/rule:
+	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/algo.dir/rule
+.PHONY : source/CMakeFiles/algo.dir/rule
+
+# Convenience name for target.
+algo: source/CMakeFiles/algo.dir/rule
+
+.PHONY : algo
+
+# fast build rule for target.
+algo/fast:
+	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/algo.dir/build.make source/CMakeFiles/algo.dir/build
+.PHONY : algo/fast
+
+# Convenience name for target.
 source/CMakeFiles/aufgabe_5.dir/rule:
 	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/aufgabe_5.dir/rule
 .PHONY : source/CMakeFiles/aufgabe_5.dir/rule
@@ -259,6 +274,33 @@ aufgabe_14: source/CMakeFiles/aufgabe_14.dir/rule
 aufgabe_14/fast:
 	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/aufgabe_14.dir/build.make source/CMakeFiles/aufgabe_14.dir/build
 .PHONY : aufgabe_14/fast
+
+algo.o: algo.cpp.o
+
+.PHONY : algo.o
+
+# target to build an object file
+algo.cpp.o:
+	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/algo.dir/build.make source/CMakeFiles/algo.dir/algo.cpp.o
+.PHONY : algo.cpp.o
+
+algo.i: algo.cpp.i
+
+.PHONY : algo.i
+
+# target to preprocess a source file
+algo.cpp.i:
+	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/algo.dir/build.make source/CMakeFiles/algo.dir/algo.cpp.i
+.PHONY : algo.cpp.i
+
+algo.s: algo.cpp.s
+
+.PHONY : algo.s
+
+# target to generate assembly for a file
+algo.cpp.s:
+	cd /home/feras/programmiersprachen-aufgabenblatt-3/build && $(MAKE) -f source/CMakeFiles/algo.dir/build.make source/CMakeFiles/algo.dir/algo.cpp.s
+.PHONY : algo.cpp.s
 
 aufgabe_11.o: aufgabe_11.cpp.o
 
@@ -616,6 +658,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... aufgabe_6"
+	@echo "... algo"
 	@echo "... aufgabe_5"
 	@echo "... aufgabe_4"
 	@echo "... aufgabe_7"
@@ -626,6 +669,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... aufgabe_8"
 	@echo "... aufgabe_14"
+	@echo "... algo.o"
+	@echo "... algo.i"
+	@echo "... algo.s"
 	@echo "... aufgabe_11.o"
 	@echo "... aufgabe_11.i"
 	@echo "... aufgabe_11.s"

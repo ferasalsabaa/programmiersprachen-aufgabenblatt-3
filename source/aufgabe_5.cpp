@@ -8,10 +8,10 @@ std::map < std::string , int > matrikelnummern ;
 matrikelnummern ["Max Mustermann"] = 12345;
 matrikelnummern ["Erika Mustermann"] = 23523;
 // ...
-//exmatrikulation (matrikelnummer ["Fred Fuchs"]);
+//exmatrikulation (matrikelnummer ["Fred Fuchs"]);  //matriekelnummer 0
 //auto& it = matrikelnummern.find("Erika Mustermann");
 //matrikelnummern.erase(it);
 
-matrikelnummern.erase("Erika Mustermann");
+//matrikelnummern.erase("Fred Fuchs");  
     return 0;
 }

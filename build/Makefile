@@ -150,6 +150,19 @@ aufgabe_6/fast:
 .PHONY : aufgabe_6/fast
 
 #=============================================================================
+# Target rules for targets named algo
+
+# Build rule for target.
+algo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 algo
+.PHONY : algo
+
+# fast build rule for target.
+algo/fast:
+	$(MAKE) -f source/CMakeFiles/algo.dir/build.make source/CMakeFiles/algo.dir/build
+.PHONY : algo/fast
+
+#=============================================================================
 # Target rules for targets named aufgabe_5
 
 # Build rule for target.
@@ -304,6 +317,7 @@ help:
 	@echo "... nanovg"
 	@echo "... glfw"
 	@echo "... aufgabe_6"
+	@echo "... algo"
 	@echo "... aufgabe_5"
 	@echo "... aufgabe_4"
 	@echo "... aufgabe_7"
