@@ -8,7 +8,7 @@
 #include <iterator>
 
 std::vector<unsigned int> numbers(100); 
-bool is_multiple_of_3(int i)
+bool is_multiple_of_3(int i)            //fot test
 {
   return (i % 3) == 0;  
 }

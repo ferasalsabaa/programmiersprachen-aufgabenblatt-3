@@ -9,7 +9,7 @@
 
 std::vector <Circle> circles {{5.0f },{3.0f},{8.0f},
 {1.0f} ,{5.0f}};
-std::vector <Circle> result(circles.size(),4);
+std::vector <Circle> result(circles.size());
  auto gr = [](Circle a) -> bool{return a.get_radius()>=4;};
    
 
@@ -20,6 +20,7 @@ REQUIRE (std::all_of(result.begin() ,result.end() , gr ));
 
 int main ( int argc , char * argv [])
 {
-    std::copy_if(circles.begin(),circles.end(),result.begin(),gr);
+    auto i = std::copy_if(circles.begin(),circles.end(),result.begin(),gr);
+    result.resize(std::distance(result.begin(),i));
     return Catch :: Session (). run (argc,argv);
 }

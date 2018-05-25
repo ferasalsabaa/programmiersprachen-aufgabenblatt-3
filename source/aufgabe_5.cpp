@@ -13,5 +13,7 @@ matrikelnummern ["Erika Mustermann"] = 23523;
 //matrikelnummern.erase(it);
 
 //matrikelnummern.erase("Fred Fuchs");  
+
+// inser
     return 0;
 }

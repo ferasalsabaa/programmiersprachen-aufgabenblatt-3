@@ -10,7 +10,7 @@ int main()
     std::vector<int> v_0(10);
 
     for(auto& v : v_0){
-        v = std::rand();
+        v = std::rand();   //fuellen
     }
 
     std::copy(std::cbegin(v_0),std::cend(v_0),
@@ -25,7 +25,7 @@ int main()
 l_1.sort();                                             //sort
 std::copy (l_1.cbegin(),l_1.cend(),
 std::ostream_iterator<int>(std::cout,"\n"));
-std::generate(std::begin(v_0),std::end(v_0),std::rand);
+std::generate(std::begin(v_0),std::end(v_0),std::rand); //randomly numbers
 std::copy(v_0.crbegin(),v_0.crend(),
 std::ostream_iterator<int>(std::cout,"\n"));
 
