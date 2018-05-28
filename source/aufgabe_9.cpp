@@ -25,7 +25,7 @@ int main()
 l_1.sort();                                             //sort
 std::copy (l_1.cbegin(),l_1.cend(),
 std::ostream_iterator<int>(std::cout,"\n"));
-std::generate(std::begin(v_0),std::end(v_0),std::rand); //randomly numbers
+std::generate(std::begin(v_0),std::end(v_0),std::rand); //randomly .. numbers
 std::copy(v_0.crbegin(),v_0.crend(),
 std::ostream_iterator<int>(std::cout,"\n"));
 

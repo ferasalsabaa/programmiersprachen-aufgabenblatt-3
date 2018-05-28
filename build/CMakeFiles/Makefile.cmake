@@ -69,7 +69,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/nanovg.dir/DependInfo.cmake"
   "external/glfw-3.2.1/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   "source/CMakeFiles/aufgabe_6.dir/DependInfo.cmake"
-  "source/CMakeFiles/algo.dir/DependInfo.cmake"
   "source/CMakeFiles/aufgabe_5.dir/DependInfo.cmake"
   "source/CMakeFiles/aufgabe_4.dir/DependInfo.cmake"
   "source/CMakeFiles/aufgabe_7.dir/DependInfo.cmake"

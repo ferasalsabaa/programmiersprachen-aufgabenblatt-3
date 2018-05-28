@@ -54,9 +54,5 @@ circle.cpp
 color.hpp
 vec2.cpp)
 
-#build algo
-add_executable(algo
-algo.cpp)
-
 
 
